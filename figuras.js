@@ -58,6 +58,8 @@ function areaTriangulo(altura, base){
 //código del circulo
 console.group("Circulo");
 
+
+
 function perimetroCirculo(radio){
     return (radio * 2) * Math.PI;
 }
@@ -83,3 +85,18 @@ function areaCirculo(radio){
 
 
 console.groupEnd();
+
+
+function calcularPermimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;   
+    const perimetro = perimetroCuadrado(value);
+    document.getElementById("respuesta").innerHTML = "El perimetro del cuadrado mide " + perimetro + "cm";
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;   
+    const perimetro = areaCuadrado(value);
+    document.getElementById("respuesta").innerHTML = "El área del cuadrado mide " + perimetro + "cm2";
+}
