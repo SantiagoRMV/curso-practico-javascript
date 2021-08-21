@@ -6,10 +6,11 @@
 //Cuarto paso: integrar JS con HTML
 //Quinto paso: enviar avances a Github
 
+var precioOriginal;
+var descuento;
+
+
 function calcular(){
-    
-    var precioOriginal;
-    var descuento;
     
     precioOriginal = document.getElementById("precioInput").value;
     descuento = document.getElementById("descuentoInput").value; 
