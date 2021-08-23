@@ -9,7 +9,6 @@
 var precioOriginal;
 var descuento;
 
-
 function calcular(){
     
     precioOriginal = document.getElementById("precioInput").value;
