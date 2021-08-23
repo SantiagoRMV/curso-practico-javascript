@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Taller</title>
+</head>
+<body>
+    <h1>Calcular descuento por promocio y/o bono</h1>
+        <div id="input">
+            <h3>Ingrese el Precio:</h3>
+            <input type="number" id="precioInput">
+            <h3>Ingrese el descuento</h3>
+            <input type="number" id="descuentoInput">
+            <h3>Seleccione si aplica bono</h3>
+            <select name="cupon" id="cuponInput">
+                <option value="N/A">N/A</option>
+                <option value="25%">25%</option>
+                <option value="50%">50%</option>
+                <option value="75%">75%</option>
+            </select>
+
+            <button id="calcular" onclick="calcular()">Enviar</button>
+        </div>
+
+        <div id="output">
+            <p>El Precio con el descuento es: </p>
+            <p id="precioConDescuento"></p>
+        </div>
+<script src="./retoTaller2.js"></script>
+</body>
+</html>
